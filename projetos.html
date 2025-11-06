@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Projetos - ONG Esperança</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-    </nav>
 
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="brand">ONG Esperança</div>
+            <button class="hamburger" aria-label="Abrir menu">Ξ</button>
+            <nav aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="index.html"><b>Início</b></a></li>
+                    <li class="nav-item"><a href="projetos.html" aria-current="page"><b>Projetos ▾</b></a>
+                        <div class="submenu">
+                            <a href="#resgate"><b>Resgate</b></a>
+                            <a href="#adocao"><b>Adoção</b></a>
+                        </div>
+                    </li>
+                    <li><a href="cadastro.html"><b>Cadastro</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Nossos Projetos</h1>
+    <main class="container" role="main">
+        <h1>Projetos Sociais</h1>
+       
+        <section id="resgate" aria-labelledby="resgate-title">
+            <h2 id="resgate-title">Resgate de Animais</h2>
+            <p>O projeto de resgate da ONG Esperança tem como objetivo retirar animais de situações de perigo, garantir atendimento veterinário imediato e promover sua recuperação física e emocional, até que estejam prontos para adoção responsável.</p>
+            <div class="cards-grid">
+                <article class="card">
+                    <figure>
+                        <img src="imagens/cuidados.jpg" alt="Cachorros resgatados">
+                        <figcaption><b>Primeiro Atendimento</b></figcaption>
+                    </figure>
+                    <h3>Atendimento Emergencial</h3>
+                    <p>Resgates e primeiros socorros.</p>
+                </article>
 
-    <section>
-    <h2>Resgate de Animais abandonados</h2>
-    <p>Resgatamos cães e gatos em situação de risco e damos cuidados veterinários.</p>
-    <img src="imagens/cachorros resgatados.jpg" alt="Cachorros resgatados" width="500">
-    <p>Cachorros resgatados pela ONG</p>
-    </section>
+                <article class="card">
+                    <figure>
+                        <img src="imagens/cirurgia-em-pequenos-animais.jpg" alt="Cirurgia veterinária">
+                        <figcaption><b>Tratamento</b></figcaption>
+                    </figure>
+                    <h3>Tratamento Veterinário</h3>
+                    <p>Consultas, cirurgia e medicação.</p>
+                </article>
+            </div>
+        </section>
 
+        <section id="adocao" aria-labelledby="adocao-title">
+            <h2 id="adocao-title">Campanha de Adoção</h2>
+            <p>Promovemos eventos e feiras de adoção responsável, onde animais resgatados têm a chance de encontrar famílias amorosas. Também acompanhamos cada processo de adoção para garantir o bem-estar e a adaptação de todos.</p>
+            <div class="cards-grid">
+                <article class="card">
+                    <figure>
+                        <img src="imagens/feira-de-adoção.jpg" alt="Gatinhos disponível para adoção">
+                        <figcaption><b>Feira de adoção</b></figcaption>
+                    </figure>
+                    <h3>Feiras de Adoção</h3>
+                    <p>Eventos presenciais e digitais para conectar lares e animais.</p>
+                </article>
 
-    <section>
-    <h2>Campanha de Adoção</h2>
-    <p>Organizamos feiras de adoção para que esses animais encontrem novos lares.</p>
-    <img src="imagens/gatinho-pronto-adoção.jpg" alt="Gato pronto para adoção" width="400">
-    <p>Gato pronto para adoção</p>
-    </section>
+                <article class="card">
+                    <figure>
+                        <img src="imagens/familia-adotando-cachorro.jpg" alt="Família adotando um cachorro">
+                        <figcaption><b>Lares cheios de amor</b></figcaption>
+                    </figure>
+                    <h3>Histórias de Adoção</h3>
+                    <p>Depoimentos de famílias que adotaram e transformaram vidas.</p>
+                </article>
 
+                <article class="card">
+                    <figure>
+                        <img src="imagens/doacoes.jpg" alt="Evento de arrecadação de doações para animais">
+                        <figcaption><b>Eventos e Doações</b></figcaption>
+                    </figure>
+                    <h3>Mobilização Solidária</h3>
+                    <p>Campanhas de arrecadação de ração, produtos e recursos para apoiar os animais resgatados</p>
+                </article>
+            </div>
+        </section>
 
-    <h2>Como ajudar</h2>
-    <p>Você pode se tornar voluntário ou fazer uma doação para ajudar nossos projetos.</p>
+    </main>
+    
+   <footer class="footer" role="contentinfo">
+    <div class="container">
+        <p>© ONG Esperança - Transparência e cuidado</p>
+    </div>
+   </footer>
 
-    <a href="index.html">Voltar para a Página Inicial</a>
-
+   <script src="js/script.js"></script>
 </body>
-
 </html>
